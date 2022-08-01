@@ -1,0 +1,86 @@
+:root {
+  --light-blue: #3355dd;
+  --blue: #2745ba;
+  --white: #ffffff;
+  --black: #000000;
+  --purple: #3a0185;
+  --light-purple: #5708bf;
+}
+
+body {
+    background: var(--bg);                                                            
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+ul {
+    font-family: helvetica;
+}
+
+li {
+  list-style: circle;
+}
+
+.list {
+  list-style: square;
+}
+
+#msg {
+  font-family: monospace;
+}
+
+.btn-group .button {
+  padding: 15px 32px;
+  margin: 0px;
+  width: 25%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  float: left;
+  border: 0px;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+}
+
+.btn-group .button:hover {
+  background-color: var(--btnHover);
+}
+
+.light-theme {
+    --bg: var(--blue);
+    --fontColor: var(--black);
+    --btnBg: var(--purple);
+    --btnRadius: var(--white);
+    --btnFontColor: var(--white);
+    --btnHover: var(--light-purple);
+}
+
+.dark-theme {
+    --bg: var(--purple);
+    --fontColor: var(--white);
+    --btnBg: var(--blue);
+    --btnRadius: var(--black);
+    --btnFontColor: var(--black);
+    --btnHover: var(--light-blue);
+}
+
+.btn {
+    position: relative;
+    cursor: pointer;
+    float: right;
+    right: 20px;
+    bottom: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 2px solid var(--btnRadius);
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+} 
+.btn:hover {
+    right: 19px;
+    bottom: 19px;
+    height: 52px;
+    width: 52px;
+}
