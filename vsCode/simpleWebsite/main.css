@@ -56,15 +56,6 @@ li {
     --btnHover: var(--light-purple);
 }
 
-.dark-theme {
-    --bg: var(--purple);
-    --fontColor: var(--white);
-    --btnBg: var(--blue);
-    --btnRadius: var(--black);
-    --btnFontColor: var(--black);
-    --btnHover: var(--light-blue);
-}
-
 .btn {
     position: relative;
     cursor: pointer;
