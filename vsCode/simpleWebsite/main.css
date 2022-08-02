@@ -3,8 +3,8 @@
   --blue: #2745ba;
   --white: #ffffff;
   --black: #000000;
-  --purple: #3a0185;
-  --light-purple: #5708bf;
+  --purple: #4234c7;
+  --light-purple: #6252f2;
 }
 
 body {
@@ -29,7 +29,24 @@ li {
   font-family: monospace;
 }
 
-.btn-group .button {
+.light-theme {
+  --bg: var(--white);
+  --fontColor: var(--black);
+  --btnBg: var(--purple);
+  --btnRadius: var(--black);
+  --btnFontColor: var(--white);
+  --btnHover: var(--light-purple);
+}
+
+.header {
+  background-color: #dddddd;
+  clear: both;
+  padding: 5px;
+  top: 5px;
+  text-align:center;
+}
+
+.navBar .button {
   padding: 15px 32px;
   margin: 0px;
   width: 25%;
@@ -43,15 +60,30 @@ li {
   background-color: var(--btnBg);
 }
 
-.btn-group .button:hover {
-  background-color: var(--btnHover);
+.leftColumn {
+  width: 25%;
+  float:left;
+  background-color: #dddddd;
+  padding: 0px;
+  text-align: center;
 }
 
-.light-theme {
-    --bg: var(--blue);
-    --fontColor: var(--black);
-    --btnBg: var(--purple);
-    --btnRadius: var(--white);
-    --btnFontColor: var(--white);
-    --btnHover: var(--light-purple);
+.middleColumn {
+  width: 50%;
+  float:left;
+  background-color: #dddddd;
+  padding:0px;
+  text-align:center;
+}
+
+.rightColumn {
+  width: 25%;
+  float:left;
+  background-color: #dddddd;
+  padding:0px;
+  text-align:center;
+}
+
+.navBar .button:hover {
+  background-color: var(--btnHover);
 }
