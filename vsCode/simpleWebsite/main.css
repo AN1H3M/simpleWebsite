@@ -16,22 +16,15 @@ body {
 
 ul {
     font-family: helvetica;
+    text-align:justify;
 }
 
 li {
   list-style: circle;
 }
 
-.list {
-  list-style: square;
-}
-
 * {
   box-sizing: border-box;
-}
-
-#msg {
-  font-family: monospace;
 }
 
 .navBar {
@@ -76,7 +69,7 @@ li {
   text-align: left;
 }
 
-#summaryTitle {
+#headingTitle {
   text-transform: uppercase;
 }
 .mainContent .summary {
