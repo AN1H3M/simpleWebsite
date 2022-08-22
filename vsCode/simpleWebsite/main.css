@@ -4,7 +4,7 @@
   --white: #eeeeee;
   --offWhite: #dddddd;
   --black: #000000;
-  --light-purple: #a80aa8;
+  --light-plum: #a80aa8;
 }
 
 a {
@@ -49,11 +49,11 @@ li {
   cursor: pointer;
   border: 0px;
   color: var(--white);
-  background-color:purple;
+  background-color:orchid;
 }
 
 .navBar .button:hover {
-  background-color: var(--light-purple);
+  background-color: var(--light-plum);
 }
 
 .mainContent {
@@ -86,8 +86,8 @@ li {
 }
 
 .summary {
-  background-color: purple;;
-  margin-top: 40px;
+  background-color: orchid;;
+  margin-top: 60px;
   margin-right: 0px;
   margin-left: 0px;
   margin-bottom: 0.5cm;
@@ -100,39 +100,46 @@ li {
 
 #headingTitle {
   text-transform: uppercase;
-  color: purple
+  color: white;
+  height: 20px;
 }
 
-.firstRow {
-  background-color: #999999;
+#sumTitle {
+  color:plum;
+}
+
+.row {
   display: flex;
   flex-wrap: nowrap;
-  height: 7cm;
 }
 
-.firstRow .box {
-  background-color: #dddddd;
+.row .box {
+  background-color: orchid;
   border-radius: 25px;
-  width: 50%;
-  height: 100%;
-  margin: 10px;
+  width: calc(50% - 50px);
+  margin: 25px;
+  margin-top: 50px;
 }
 
-.firstRow .box .degreesContent {
-  background-color: #aaaaaa;
+.row .box .boxContent {
+  background-color: plum;
   border-radius: 25px;
+  padding: 15px;;
   height: 100%;
+  width: 100%;
+  color: white;
+  text-align: left;
 }
 
-.firstRow .box .skillsContent {
-  background-color: #aaaaaa;
-  border-radius: 25px;
-  height: 100%;
+.row .box .boxContent .myUL {
+  display: inline-block;
+  text-align: left;
 }
 
 .footer {
   width: 100%;
-  background-color:purple;
+  background-color:plum;
+  margin-top:2cm;
   padding-top: 50px;
   padding-bottom: 150px;
 }
@@ -144,7 +151,7 @@ li {
   float:left;
   padding: 10px;
   color: black;
-  width:15%;
+  max-width:15%;
   margin:0px;
   margin-left:1cm;
   text-align: center;
